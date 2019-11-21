@@ -1,0 +1,11 @@
+C:\Users\Сашок\source\repos\Laba_3_1\Laba_3_1\bin\Debug\netcoreapp3.0\Laba_3_1.exe
+C:\Users\Сашок\source\repos\Laba_3_1\Laba_3_1\bin\Debug\netcoreapp3.0\Laba_3_1.deps.json
+C:\Users\Сашок\source\repos\Laba_3_1\Laba_3_1\bin\Debug\netcoreapp3.0\Laba_3_1.runtimeconfig.json
+C:\Users\Сашок\source\repos\Laba_3_1\Laba_3_1\bin\Debug\netcoreapp3.0\Laba_3_1.runtimeconfig.dev.json
+C:\Users\Сашок\source\repos\Laba_3_1\Laba_3_1\bin\Debug\netcoreapp3.0\Laba_3_1.dll
+C:\Users\Сашок\source\repos\Laba_3_1\Laba_3_1\bin\Debug\netcoreapp3.0\Laba_3_1.pdb
+C:\Users\Сашок\source\repos\Laba_3_1\Laba_3_1\obj\Debug\netcoreapp3.0\Laba_3_1.csprojAssemblyReference.cache
+C:\Users\Сашок\source\repos\Laba_3_1\Laba_3_1\obj\Debug\netcoreapp3.0\Laba_3_1.AssemblyInfoInputs.cache
+C:\Users\Сашок\source\repos\Laba_3_1\Laba_3_1\obj\Debug\netcoreapp3.0\Laba_3_1.AssemblyInfo.cs
+C:\Users\Сашок\source\repos\Laba_3_1\Laba_3_1\obj\Debug\netcoreapp3.0\Laba_3_1.dll
+C:\Users\Сашок\source\repos\Laba_3_1\Laba_3_1\obj\Debug\netcoreapp3.0\Laba_3_1.pdb

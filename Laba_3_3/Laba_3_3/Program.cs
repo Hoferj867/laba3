@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Laba_3_3
 {
@@ -6,31 +6,29 @@ namespace Laba_3_3
     {
         static void Main(string[] args)
         {
-            Console.Write("Введите кол-во циклических сдвигов: ");
-            int k = Convert.ToInt32(Console.Read());
-            Console.WriteLine();
-            Console.Write("Введите длину массива: ");
-            int m = Convert.ToInt32(Console.Read());
-            int[] nums = new int[m];
-            Console.WriteLine();
+            Console.WriteLine("матрица:");
+            int[] nums= new int[5];
             Random rand = new Random();
-            for (int i = 0; i < m; i++)
+            int n = 5;
+            for (int i = 0; i < nums.GetLength(0); i++)
             {
-                nums[i] = rand.Next(100);
-                Console.Write ("{0, 2} ", nums[i]);
+                nums[i]=rand.Next(10);
+                Console.Write("{0} ", nums[i]);
             }
-            Console.Write("\n\n");
-            if (k > nums.Length)
-                k = k % 10;
-            for (int i = k; i < nums.Length; i++)
+            Console.WriteLine();
+            Console.WriteLine("Введите число сдивгов:");
+            int k = Convert.ToInt32(Console.ReadLine());
+            if (k>5)
+                k %= 5;
+            for (int i = k; i < n; i++)
             {
-                Console.Write("{0, 2} ", nums[i]);
+                Console.Write("{0} ", nums[i]);
             }
             for (int i = 0; i < k; i++)
             {
-                Console.Write("{0, 2} ", nums[i]);
+                Console.Write("{0} ", nums[i]);
             }
-            Console.ReadKey();
+
         }
 
     }

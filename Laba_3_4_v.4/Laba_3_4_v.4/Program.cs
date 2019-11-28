@@ -1,61 +1,82 @@
 ﻿using System;
 
-namespace Laba_3_4_v._4
+namespace Laba3_4
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int[,] nums_A = new int[3, 3];
-            int[,] nums_B = new int[3, 3];
-            int[,] nums_sum = new int[3, 3];
-            int[,] nums_balance = new int[3, 3];
-            Random rand = new Random();
-            Console.Write("Массив А:");
-            Console.WriteLine("\n\n");
-            for (int i = 0; i < nums_A.GetLength(0); i++)
             {
-                for (int j = 0; j < nums_A.GetLength(1); j++)
+                int[,] A = new int[3, 3];
+                int[,] B = new int[3, 3];
+                double del = 0;
+                Random rand = new Random();
+                Console.Write("Массив А:");
+                Console.WriteLine("\n\n");
+                for (int i = 0; i < A.GetLength(0); i++)
                 {
-                    nums_A[i, j] = rand.Next(100);
+                    for (int j = 0; j < A.GetLength(1); j++)
+                    {
+                        A[i, j] = rand.Next(100);
+                        Console.Write("{0, 2}  ", A[i, j]);
+                    }
+                    Console.WriteLine();
+                }
+                Console.Write("Массив B:");
+                Console.WriteLine("\n\n");
+                for (int i = 0; i < B.GetLength(0); i++)
+                {
+                    for (int j = 0; j < B.GetLength(1); j++)
+                    {
+                        B[i, j] = rand.Next(100);
 
-                    Console.Write("{0, 2}  ", nums_A[i, j]);
+                        Console.Write("{0, 2}  ", B[i, j]);
+                    }
+                    Console.WriteLine();
                 }
+                Console.WriteLine("\n\n");
+                Sum(A, B, out del);
+                Console.WriteLine();
+                NoSum(A, B, out del);
                 Console.WriteLine();
             }
-            Console.Write("Массив B:");
-            Console.WriteLine("\n\n");
-            for (int i = 0; i < nums_B.GetLength(0); i++)
+            static int[,] Sum(int[,] A, int[,] B, out double del)
             {
-                for (int j = 0; j < nums_B.GetLength(1); j++)
+                int s = 0;
+                int[,] sum_1 = new int[3, 3];
+                for (int i = 0; i < sum_1.GetLength(0); i++)
                 {
-                    nums_B[i, j] = rand.Next(100);
-
-                    Console.Write("{0, 2}  ", nums_B[i, j]);
+                    for (int j = 0; j < sum_1.GetLength(1); j++)
+                    {
+                        sum_1[i, j] = A[i, j] + B[i, j];
+                        Console.Write(" " + sum_1[i, j]);
+                        s += sum_1[i, j];
+                    }
+                    Console.WriteLine();
                 }
                 Console.WriteLine();
+                del = s / 9.0;
+                Console.WriteLine(del);
+                return sum_1;
             }
-            Console.WriteLine("\n\n");
-            Console.WriteLine("Сумма Матрицы А и В:");
-            for (int i = 0; i < nums_sum.GetLength(0); i++)
+             static int[,] NoSum(int[,] A, int[,] B, out double del)
             {
-                for (int j = 0; j < nums_sum.GetLength(1); j++)
+                int s = 0;
+                int[,] Nosum_1 = new int[3, 3];
+                for (int i = 0; i < Nosum_1.GetLength(0); i++)
                 {
-                    nums_sum[i, j] = nums_A[i, j] + nums_B[i, j];
-                    Console.Write("{0, 2}  ", nums_sum[i, j]);
+                    for (int j = 0; j < Nosum_1.GetLength(1); j++)
+                    {
+                        Nosum_1[i, j] = A[i, j] - B[i, j];
+                        Console.Write(" " + Nosum_1[i, j]);
+                        s += Nosum_1[i, j];
+                    }
+                    Console.WriteLine();
                 }
                 Console.WriteLine();
-            }
-            Console.WriteLine("\n\n");
-            Console.WriteLine("Разницы Матрицы А и В:");
-            for (int i = 0; i < nums_balance.GetLength(0); i++)
-            {
-                for (int j = 0; j < nums_balance.GetLength(1); j++)
-                {
-                    nums_balance[i, j] = nums_A[i, j] - nums_B[i, j];
-                    Console.Write("{0, 2}  ", nums_balance[i, j]);
-                }
-                Console.WriteLine();
+                del = s / 9.0;
+                Console.WriteLine(del);
+                return Nosum_1;
             }
         }
     }

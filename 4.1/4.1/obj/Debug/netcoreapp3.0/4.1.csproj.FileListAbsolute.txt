@@ -1,0 +1,11 @@
+C:\Users\Сашок\source\repos\4.1\4.1\bin\Debug\netcoreapp3.0\4.1.exe
+C:\Users\Сашок\source\repos\4.1\4.1\bin\Debug\netcoreapp3.0\4.1.deps.json
+C:\Users\Сашок\source\repos\4.1\4.1\bin\Debug\netcoreapp3.0\4.1.runtimeconfig.json
+C:\Users\Сашок\source\repos\4.1\4.1\bin\Debug\netcoreapp3.0\4.1.runtimeconfig.dev.json
+C:\Users\Сашок\source\repos\4.1\4.1\bin\Debug\netcoreapp3.0\4.1.dll
+C:\Users\Сашок\source\repos\4.1\4.1\bin\Debug\netcoreapp3.0\4.1.pdb
+C:\Users\Сашок\source\repos\4.1\4.1\obj\Debug\netcoreapp3.0\4.1.csprojAssemblyReference.cache
+C:\Users\Сашок\source\repos\4.1\4.1\obj\Debug\netcoreapp3.0\4.1.AssemblyInfoInputs.cache
+C:\Users\Сашок\source\repos\4.1\4.1\obj\Debug\netcoreapp3.0\4.1.AssemblyInfo.cs
+C:\Users\Сашок\source\repos\4.1\4.1\obj\Debug\netcoreapp3.0\4.1.dll
+C:\Users\Сашок\source\repos\4.1\4.1\obj\Debug\netcoreapp3.0\4.1.pdb
